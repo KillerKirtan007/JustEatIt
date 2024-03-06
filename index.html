@@ -1,0 +1,224 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restraunt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+   
+    $("a").on("click", function (event) {
+        
+        if (this.hash !== "") {
+           
+            event.preventDefault();
+
+           
+            var hash = this.hash;
+
+            
+            $("html, body").animate(
+                {
+                    scrollTop: $(hash).offset().top,
+                },
+                800,
+                function () {
+          
+                    window.location.hash = hash;
+                }
+            );
+        }
+    });
+});
+    </script>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#food">Category</a></li>
+                <li><a href="#food-menu">Menu</a></li>
+                <li><a href="#testimonials">Testimonial</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <h1 class="logo">Just Eat It</h1>
+        </div>
+    </nav>
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">Eat Right Food</h1>
+            <p>Eat Healty, it is good for our health.</p>
+            <a href="#food-menu" class="btn btn-primary">Menu</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <h2>We've beem making healthy food last for 10 years</h2>
+                <p>
+                    At our restaurant, we're more than just a place to dine – we're a culinary experience rooted in passion and authenticity. With a commitment to excellence, we strive to create memorable moments through every dish we serve. From our kitchen to your table, each recipe is crafted with the finest ingredients and a touch of creativity. Our dedicated team embodies the spirit of hospitality, ensuring every guest feels welcomed and valued. Embracing local flavors and global influences, our menu reflects a fusion of tradition and innovation. With a warm ambiance and attentive service, we invite you to savor the essence of our restaurant, where every meal tells a story. Join us on a journey of flavors, community, and culinary delight.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="https://i.postimg.cc/mgpwzmx9/about-photo.jpg" alt="food" />
+            </div>
+        </div>
+    </section>
+    <section id="food">
+        <h2>Types of food</h2>
+        <div class="food-container container">
+            <div class="food-type fruite">
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/yxThVPXk/food1.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>fruite</h3>
+                        <a href="https://en.wikipedia.org/wiki/Fruit" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type vegetable">
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/Nffm6Rkk/food2.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>vegetable</h3>
+                        <a href="https://en.wikipedia.org/wiki/Vegetable" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="food-type grin">
+                <div class="img-container">
+                    <img src="https://i.postimg.cc/76ZwsPsd/food3.jpg" alt="error" />
+                    <div class="img-content">
+                        <h3>grin</h3>
+                        <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary" target="blank">learn
+                            more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="food-menu">
+        <h2 class="food-menu-heading">Food Menu</h2>
+        <div class="food-menu-container container">
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/wTLMsvSQ/food-menu1.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Mix Vegetable & Pulses Salad </h2>
+                    <p>
+                        A vibrant medley of fresh, crunchy vegetables and wholesome pulses, our Mix Vegetable and Pulses Salad is a nutritious delight. Bursting with colors and flavors, this salad combines a variety of seasonal vegetables such as crisp lettuce, juicy tomatoes, crunchy cucumbers, and vibrant bell peppers. Complemented by a hearty blend of protein-rich pulses like chickpeas, lentils, and kidney beans, each bite offers a satisfying crunch and a burst of wholesome goodness. Tossed with a zesty dressing and garnished with fragrant herbs, our Mix Vegetable and Pulses Salad is not only a feast for the senses but also a nourishing addition to any meal. Enjoy the refreshing taste and nutritional benefits of this vibrant salad, perfect for elevating your dining experience to new heights of health and flavor..
+                    </p>
+                    <p class="food-price">Price: &#8377; 99</p>
+                </div>
+            </div>
+
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/sgzXPzzd/food-menu2.jpg" alt="error" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Fresh Fruit and Dryfuit breakfast with milk</h2>
+                    <p>
+                        Indulge in our Fresh Fruit and Dry Fruit Breakfast with Milk, a burst of vitality in every bite. Enjoy the natural sweetness of succulent fruits paired with crunchy almonds, walnuts, and raisins. With chilled, creamy milk tying it all together, it's a nutritious start to your day. Energize your mornings with this wholesome blend of flavors and nutrients. Dive into a breakfast that nourishes your body and uplifts your senses.
+                    </p>
+                    <p class="food-price">Price: &#8377; 199</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/8zbCtYkF/food-menu3.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Green Vegies Salad</h2>
+                    <p>
+                        Savor the crisp and refreshing taste of our Green Veggie Salad, a vibrant medley of garden-fresh goodness. Loaded with crunchy cucumbers, crisp lettuce, and vibrant bell peppers, each bite is a burst of flavor. Tossed in a zesty dressing, it's a refreshing and healthy choice for any meal. Packed with vitamins and nutrients, it's a guilt-free indulgence you'll love. Elevate your dining experience with our Green Veggie Salad today.
+                    </p>
+                    <p class="food-price">Price: &#8377; 79</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/Yq98p5Z7/food-menu4.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Healthy Vegies and crunchy salad</h2>
+                    <p>
+                        Delight in our Healthy Veggie and Crunchy Salad, a symphony of textures and flavors. Featuring an array of crisp vegetables, including carrots, broccoli, and kale, it's a nutritious delight. Topped with crunchy seeds and nuts, each bite offers a satisfying crunch and a boost of energy. Drizzled with a tangy vinaigrette, it's a guilt-free pleasure you'll crave. Elevate your meal with this vibrant and wholesome salad choice today.
+                    </p>
+                    <p class="food-price">Price: &#8377; 149</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/KYnDqxkP/food-menu5.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile"> Sweet Delight</h2>
+                    <p>
+                        Satisfy your sweet tooth with our delectable array of sweets, crafted with love and precision. From rich chocolate truffles to delicate pastries, each treat is a symphony of flavor. Indulge in our decadent cakes, adorned with luscious frosting and intricate designs, perfect for any celebration. Dive into our homemade cookies, baked to perfection with the finest ingredients, offering a taste of nostalgia with every bite. Whether you crave something classic or innovative, our sweets promise to delight your senses and leave you craving more.
+                    </p>
+                    <p class="food-price">Price: &#8377; 99</p>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-img">
+                    <img src="https://i.postimg.cc/Jnxc8xQt/food-menu6.jpg" alt="" />
+                </div>
+                <div class="food-description">
+                    <h2 class="food-titile">Sweet  Barries and Fruit Salad</h2>
+                    <p>
+                        Indulge in our Sweet Berries and Fruit Salad, a delightful blend of nature's finest treasures. Bursting with the juicy sweetness of ripe strawberries, succulent blueberries, and tangy raspberries, each bite is a symphony of flavors. Enhanced with slices of tropical fruits like pineapple and mango, it's a refreshing sensation on your palate. Tossed in a light honey-lime dressing, it's the perfect balance of tart and sweet. Treat yourself to this vibrant and wholesome salad for a taste of pure bliss.
+                    </p>
+                    <p class="food-price">Price: &#8377; 179</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="contact-img">
+                <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
+            </div>
+
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <input type="text" placeholder="Your Name" />
+                <input type="email" placeholder="E-Mail" />
+                <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
+                <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <h2>Just Eat It &copy; all rights reserved</h2>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+</html>
+
+</body>
+
+</html>
